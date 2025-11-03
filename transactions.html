@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto Portfolio Tracker | TrackFi</title>
+    <title>Crypto Portfolio Tracker | Transactions</title>
   </head>
   <body>
     <header>
@@ -15,19 +15,14 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial.html"
+        data-hx-get="transactions.header-hero.partial.html"
       ></section>
     </header>
     <main>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.benefit-cards.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.newsletter.partial.html"
+        data-hx-get="transactions.transactions-list.partial.html"
       ></section>
     </main>
     <footer
