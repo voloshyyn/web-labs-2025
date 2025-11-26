@@ -1,44 +1,40 @@
-<section class="assets-hero" role="region" aria-label="Assets header">
-  <div class="assets-hero__inner">
-    <div class="assets-hero__main">
-      <h1 class="assets-hero__title">Assets</h1>
+<div class="assets-hero" aria-label="Assets header">
+  <div class="assets-hero__main">
+    <h1 class="assets-hero__title">Assets</h1>
 
-      <div class="assets-hero__stats">
-        <div class="assets-hero__label">Total Assets</div>
-        <div class="assets-hero__amount" aria-live="polite">
-          $6,525,977,658.81
-        </div>
-      </div>
-    </div>
-
-    <div class="assets-hero__actions">
-      <form
-        class="assets-hero__search"
-        action="#"
-        method="get"
-        role="search"
-        aria-label="Search in your assets"
-      >
-        <label for="assets-search" class="assets-hero__visually-hidden"
-          >Search in your assets</label
-        >
-        <input
-          id="assets-search"
-          name="q"
-          class="assets-hero__search-input"
-          type="search"
-          placeholder="Search in Your Assets"
-          aria-label="Search in your assets"
-        />
-      </form>
-
-      <button
-        class="assets-hero__btn assets-hero__btn--download"
-        type="button"
-        aria-label="Download assets"
-      >
-        Download
-      </button>
+    <div class="assets-hero__stats">
+      <p class="assets-hero__label">Total Assets</p>
+      <p class="assets-hero__amount" aria-live="polite">$6,525,977,658.81</p>
     </div>
   </div>
-</section>
+
+  <div class="assets-hero__actions">
+    <form
+      class="assets-hero__search"
+      action="#"
+      method="get"
+      role="search"
+      aria-label="Search in your assets"
+    >
+      <label for="assets-search" class="assets-hero__visually-hidden"
+        >Search in your assets</label
+      >
+      <input
+        id="assets-search"
+        name="q"
+        class="assets-hero__search-input"
+        type="search"
+        placeholder="Search in Your Assets"
+        aria-label="Search in your assets"
+      />
+    </form>
+
+    <button
+      class="assets-hero__btn assets-hero__btn--download"
+      type="button"
+      aria-label="Download assets"
+    >
+      Download
+    </button>
+  </div>
+</div>

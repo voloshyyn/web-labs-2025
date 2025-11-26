@@ -1,0 +1,202 @@
+<div class="profile-sections" aria-label="Profile sections">
+  <div class="profile-sections__tabs">
+    <ul
+      class="profile-sections__tablist"
+      role="tablist"
+      aria-label="Profile tabs"
+    >
+      <li class="profile-sections__tab" role="presentation">
+        <a
+          href="#posts"
+          role="tab"
+          aria-selected="true"
+          class="profile-sections__tab-link profile-sections__tab-link--active"
+          >Posts</a
+        >
+      </li>
+      <li class="profile-sections__tab">
+        <a
+          href="#comments"
+          role="tab"
+          aria-selected="false"
+          class="profile-sections__tab-link"
+          >Comments</a
+        >
+      </li>
+      <li class="profile-sections__tab">
+        <a
+          href="#reactions"
+          role="tab"
+          aria-selected="false"
+          class="profile-sections__tab-link"
+          >Reactions</a
+        >
+      </li>
+      <li class="profile-sections__tab">
+        <a
+          href="#watchlist"
+          role="tab"
+          aria-selected="false"
+          class="profile-sections__tab-link"
+          >Watchlist</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="profile-sections__panel"
+    id="posts"
+    role="tabpanel"
+    aria-labelledby="posts"
+  >
+    <div class="profile-empty">
+      <div class="profile-empty__illustration"></div>
+
+      <h3 class="profile-empty__title">Nothing here!</h3>
+      <p class="profile-empty__lead">
+        Create your first post or just follow accounts you are interested in!
+      </p>
+
+      <div class="profile-empty__actions">
+        <button class="btn btn--primary profile-empty__create">
+          Create first post
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="profile-sections__panel"
+    id="watchlist"
+    role="tabpanel"
+    aria-labelledby="watchlist"
+  >
+    <div class="profile-watchlist">
+      <div class="profile-watchlist__card">
+        <div class="profile-watchlist__head">
+          <h2 class="profile-watchlist__title">My Watchlist</h2>
+          <button
+            class="btn btn--outline profile-watchlist__more"
+            type="button"
+          >
+            See More Coins
+          </button>
+        </div>
+
+        <div class="profile-watchlist__table-wrap">
+          <table
+            class="profile-watchlist__table"
+            summary="Watchlist of tracked assets"
+          >
+            <thead>
+              <tr>
+                <th class="u-visually-hidden">Star</th>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>24h Change</th>
+                <th>Market Cap</th>
+                <th class="u-visually-hidden">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="profile-watchlist__star" aria-hidden="true">
+                  <img src="" alt="" />
+                </td>
+                <td>1</td>
+                <td class="profile-watchlist__name">
+                  <span
+                    class="profile-watchlist__coin"
+                    aria-hidden="true"
+                  ></span>
+                  <strong>Bitcoin</strong>
+                </td>
+                <td>$115,851.89</td>
+                <td><span class="badge badge--down">-1.29%</span></td>
+                <td>$2,245,251,185,087</td>
+                <td class="profile-watchlist__actions">⋮</td>
+              </tr>
+
+              <tr>
+                <td class="profile-watchlist__star" aria-hidden="true">
+                  <img src="" alt="" />
+                </td>
+                <td>2</td>
+                <td class="profile-watchlist__name">
+                  <span
+                    class="profile-watchlist__coin"
+                    aria-hidden="true"
+                  ></span>
+                  <strong>Bitcoin</strong>
+                </td>
+                <td>$115,851.89</td>
+                <td><span class="badge badge--down">-1.29%</span></td>
+                <td>$2,245,251,185,087</td>
+                <td class="profile-watchlist__actions">⋮</td>
+              </tr>
+
+              <tr>
+                <td class="profile-watchlist__star" aria-hidden="true">
+                  <img src="" alt="" />
+                </td>
+                <td>3</td>
+                <td class="profile-watchlist__name">
+                  <span
+                    class="profile-watchlist__coin"
+                    aria-hidden="true"
+                  ></span>
+                  <strong>Bitcoin</strong>
+                </td>
+                <td>$115,851.89</td>
+                <td><span class="badge badge--down">-1.29%</span></td>
+                <td>$2,245,251,185,087</td>
+                <td class="profile-watchlist__actions">⋮</td>
+              </tr>
+
+              <tr>
+                <td class="profile-watchlist__star" aria-hidden="true">
+                  <img src="" alt="" />
+                </td>
+                <td>4</td>
+                <td class="profile-watchlist__name">
+                  <span
+                    class="profile-watchlist__coin"
+                    aria-hidden="true"
+                  ></span>
+                  <strong>Bitcoin</strong>
+                </td>
+                <td>$115,851.89</td>
+                <td><span class="badge badge--down">-1.29%</span></td>
+                <td>$2,245,251,185,087</td>
+                <td class="profile-watchlist__actions">⋮</td>
+              </tr>
+
+              <tr>
+                <td class="profile-watchlist__star" aria-hidden="true">
+                  <img src="" alt="" />
+                </td>
+                <td>5</td>
+                <td class="profile-watchlist__name">
+                  <span
+                    class="profile-watchlist__coin"
+                    aria-hidden="true"
+                  ></span>
+                  <strong>Bitcoin</strong>
+                </td>
+                <td>$115,851.89</td>
+                <td><span class="badge badge--down">-1.29%</span></td>
+                <td>$2,245,251,185,087</td>
+                <td class="profile-watchlist__actions">
+                  <img src="" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

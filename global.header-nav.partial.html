@@ -28,12 +28,8 @@
       </ul>
     </nav>
 
-    <div class="header-nav__actions" role="group" aria-label="Header actions">
-      <button
-        class="header-nav__watchlist"
-        type="button"
-        aria-label="Watchlist"
-      >
+    <div class="header-nav__actions" aria-label="Header actions">
+      <a class="header-nav__watchlist" href="#">
         <img
           class="header-nav__watchlist-icon"
           src="img/icon-watchlist.svg"
@@ -41,7 +37,7 @@
           aria-hidden="true"
         />
         <span class="header-nav__watchlist-text">Watchlist</span>
-      </button>
+      </a>
 
       <div class="header-nav__search">
         <label for="header-search" class="header-nav__visually-hidden"
@@ -56,7 +52,9 @@
         />
       </div>
 
-      <a class="header-nav__btn header-nav__btn--primary" href="#">Log In</a>
+      <button type="button" class="header-nav__btn header-nav__btn--primary">
+        Log In
+      </button>
     </div>
   </div>
 </div>
