@@ -1,10 +1,17 @@
 <div class="assets-hero" aria-label="Assets header">
   <div class="assets-hero__main">
-    <h1 class="assets-hero__title">Assets</h1>
+    <h1 class="assets-hero__title" data-i18n="assets.title">Assets</h1>
 
     <div class="assets-hero__stats">
-      <p class="assets-hero__label">Total Assets</p>
-      <p class="assets-hero__amount" aria-live="polite">$6,525,977,658.81</p>
+      <p class="assets-hero__label" data-i18n="assets.total_label">
+        Total Assets
+      </p>
+      <img
+        class="assets-hero__label-icon"
+        src="img/icon-description_more-about.png"
+        alt="Description dots"
+      />
+      <p class="assets-hero__amount">$6,525,977,658.81</p>
     </div>
   </div>
 
@@ -25,7 +32,14 @@
         class="assets-hero__search-input"
         type="search"
         placeholder="Search in Your Assets"
+        data-i18n-placeholder="assets.search_placeholder"
         aria-label="Search in your assets"
+        data-i18n="assets.search_aria"
+      />
+      <img
+        class="assets-hero__search-icon"
+        src="img/search-glass-icon.svg"
+        alt="Search glass"
       />
     </form>
 
@@ -33,8 +47,13 @@
       class="assets-hero__btn assets-hero__btn--download"
       type="button"
       aria-label="Download assets"
+      data-i18n="assets.download"
     >
-      Download
+      <img
+        class="assets-hero__btn-icon"
+        src="img/load-icon.png"
+        alt="Load icon"
+      />
     </button>
   </div>
 </div>

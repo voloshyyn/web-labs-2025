@@ -1,33 +1,55 @@
 <div class="profile-header" role="banner" aria-label="Profile header">
-  <div class="profile-header__banner" aria-hidden="true"></div>
+  <div class="profile-header__banner" aria-hidden="true">
+    <img
+      class="profile-header__banner-img"
+      src="img/profile-banner.png"
+      alt="Profile banner"
+    />
+  </div>
 
   <div class="profile-header__content">
     <div class="profile-header__meta">
-      <div class="profile-header__avatar"></div>
+      <div class="profile-header__avatar">
+        <img
+          class="profile-header__avatar-img"
+          src="img/profile-avatar.png"
+          alt="Profile avatar"
+        />
+      </div>
 
       <div class="profile-header__details">
-        <h1 class="profile-header__name">user12345</h1>
-        <p class="profile-header__handle">@1user12345</p>
+        <h1 class="profile-header__name" data-i18n="profile.name">user12345</h1>
+        <p class="profile-header__handle" data-i18n="profile.handle">
+          @1user12345
+        </p>
 
         <p class="profile-header__counts">
-          <span class="profile-header__count"
+          <span class="profile-header__count" data-i18n="profile.following"
             ><strong>0</strong> Following</span
           >
-          <span class="profile-header__count profile-header__count--sep"
+          <span
+            class="profile-header__count profile-header__count--sep"
+            data-i18n="profile.followers"
             ><strong>0</strong> Followers</span
           >
         </p>
       </div>
 
       <div class="profile-header__actions">
-        <button class="btn btn--primary profile-header__edit">Edit</button>
+        <button
+          class="btn btn--primary profile-header__edit"
+          data-i18n="profile.edit"
+        >
+          Edit
+        </button>
       </div>
     </div>
 
     <hr class="profile-header__divider" />
 
     <p class="profile-header__meta-line">
-      Joined <time datetime="2025-09">2025 September</time>
+      <span data-i18n="profile.joined">Joined</span>
+      <time datetime="2025-09">2025 September</time>
     </p>
   </div>
 </div>

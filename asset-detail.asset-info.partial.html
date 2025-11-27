@@ -1,4 +1,4 @@
-<div class="asset-detail" role="region" aria-label="Asset detail">
+<div class="asset-detail" aria-label="Asset detail">
   <div class="asset-detail__inner">
     <aside class="asset-info" aria-label="Asset information">
       <div class="asset-info__card">
@@ -9,15 +9,25 @@
               aria-hidden="true"
             ></span>
             <div class="asset-info__titles">
+              <img
+                class="asset-info__coin-logo"
+                src="img/logo-bitcoin.png"
+                alt="Bitcoin logo"
+              />
               <h2 class="asset-info__name">
                 Bitcoin <span class="asset-info__symbol">BTC</span>
               </h2>
-              <p class="asset-info__rank">#1</p>
+              <p class="asset-info__rank" data-i18n="asset.rank">#1</p>
             </div>
           </div>
 
           <div class="asset-info__price-wrap">
             <p class="asset-info__price">$113,038.25</p>
+            <img
+              class="asset-info__arrow"
+              src="img/arrow_price-drop-down.png"
+              alt="Price drop down arrow"
+            />
             <p class="asset-info__change badge badge--down">-1.12%</p>
           </div>
         </div>
@@ -25,7 +35,9 @@
         <div class="asset-info__body">
           <dl class="asset-info__list">
             <div class="asset-info__row">
-              <dt class="asset-info__label">Website</dt>
+              <dt class="asset-info__label" data-i18n="asset.label.website">
+                Website
+              </dt>
               <dd class="asset-info__value">
                 <a href="https://www.bitcoin.com/" class="asset-info__link"
                   >https://www.bitcoin.com/</a
@@ -34,7 +46,9 @@
             </div>
 
             <div class="asset-info__row">
-              <dt class="asset-info__label">Socials</dt>
+              <dt class="asset-info__label" data-i18n="asset.label.socials">
+                Socials
+              </dt>
               <dd class="asset-info__value">—</dd>
             </div>
           </dl>
@@ -44,13 +58,31 @@
 
     <div class="asset-chart__card" aria-label="Asset chart">
       <div class="asset-chart__head">
-        <h3 class="asset-chart__title">Bitcoin (BTC) Chart</h3>
+        <h3 class="asset-chart__title" data-i18n="asset.chart.title">
+          Bitcoin (BTC) Chart
+        </h3>
         <div class="asset-chart__controls">
-          <button class="btn btn--icon" aria-label="Toggle chart type">
-            <img src="" alt="" />
+          <button
+            class="btn btn--icon"
+            aria-label="Toggle chart type"
+            data-i18n="chart.toggle_type"
+          >
+            <img
+              class="asset-chart__icon"
+              src="img/line-chart.png"
+              alt="Line chart icon"
+            />
           </button>
-          <button class="btn btn--icon" aria-label="Toggle indicators">
-            <img src="" alt="" />
+          <button
+            class="btn btn--icon"
+            aria-label="Toggle indicators"
+            data-i18n="chart.toggle_indicators"
+          >
+            <img
+              class="asset-chart__icon"
+              src="img/candlestick-chart.png"
+              alt="Candlestick chart icon"
+            />
           </button>
         </div>
       </div>

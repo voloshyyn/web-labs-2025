@@ -17,19 +17,23 @@
     <nav class="header-nav__nav" aria-label="Primary">
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Dashboard</a>
+          <a class="header-nav__link" href="#" data-i18n="nav.dashboard"
+            >Dashboard</a
+          >
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Assets</a>
+          <a class="header-nav__link" href="#" data-i18n="nav.assets">Assets</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Transactions</a>
+          <a class="header-nav__link" href="#" data-i18n="nav.transactions"
+            >Transactions</a
+          >
         </li>
       </ul>
     </nav>
 
     <div class="header-nav__actions" aria-label="Header actions">
-      <a class="header-nav__watchlist" href="#">
+      <a class="header-nav__watchlist" href="#" data-i18n="nav.watchlist">
         <img
           class="header-nav__watchlist-icon"
           src="img/icon-watchlist.svg"
@@ -48,11 +52,22 @@
           class="header-nav__search-input"
           type="search"
           placeholder="Search"
+          data-i18n-placeholder="search.placeholder"
           aria-label="Search"
+          data-i18n="search.aria"
+        />
+        <img
+          class="header-nav__search-icon"
+          src="img/search-glass-icon.svg"
+          alt="Search glass"
         />
       </div>
 
-      <button type="button" class="header-nav__btn header-nav__btn--primary">
+      <button
+        type="button"
+        class="header-nav__btn header-nav__btn--primary"
+        data-i18n="auth.login"
+      >
         Log In
       </button>
     </div>

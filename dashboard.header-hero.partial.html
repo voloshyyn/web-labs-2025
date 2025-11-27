@@ -1,10 +1,20 @@
 <div class="dashboard-hero">
   <div class="dashboard-hero__main">
-    <h1 class="dashboard-hero__title">Dashboard</h1>
+    <h1 class="dashboard-hero__title" data-i18n="dashboard.title">Dashboard</h1>
 
     <div class="dashboard-hero__stats">
       <div class="dashboard-hero__label">
-        <p class="dashboard-hero__label-text">Total Worth</p>
+        <p
+          class="dashboard-hero__label-text"
+          data-i18n="dashboard.total_worth_label"
+        >
+          Total Worth
+        </p>
+        <img
+          class="dashboard-hero__label-icon"
+          src="img/icon-description_more-about.png"
+          alt="Description dots"
+        />
       </div>
       <div class="dashboard-hero__amount">
         <p class="dashboard-hero__amount-text">$6,525,977,658.81</p>
@@ -26,6 +36,7 @@
       type="button"
       class="dashboard-hero__btn"
       aria-label="Sync dashboard"
+      data-i18n="dashboard.sync"
     >
       Sync
     </button>

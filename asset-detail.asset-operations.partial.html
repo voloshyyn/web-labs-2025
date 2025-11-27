@@ -1,7 +1,9 @@
 <div class="asset-operations" aria-label="Asset operations">
   <aside class="asset-operations__converters" aria-label="Converters">
     <div class="converter converter--card">
-      <h3 class="converter__title">BTC to USD Converter</h3>
+      <h3 class="converter__title" data-i18n="converters.btc_usd_title">
+        BTC to USD Converter
+      </h3>
       <label class="converter__field">
         <span class="u-visually-hidden">BTC amount</span>
         <input
@@ -9,6 +11,7 @@
           type="text"
           name="btc-usd"
           placeholder="BTC"
+          data-i18n-placeholder="converters.placeholder.btc"
         />
       </label>
 
@@ -19,12 +22,15 @@
           type="text"
           name="usd"
           placeholder="USD"
+          data-i18n-placeholder="converters.placeholder.usd"
         />
       </label>
     </div>
 
     <div class="converter converter--card">
-      <h3 class="converter__title">BTC to EUR Converter</h3>
+      <h3 class="converter__title" data-i18n="converters.btc_eur_title">
+        BTC to EUR Converter
+      </h3>
       <label class="converter__field">
         <span class="u-visually-hidden">BTC amount</span>
         <input
@@ -32,6 +38,7 @@
           type="text"
           name="btc-eur"
           placeholder="BTC"
+          data-i18n-placeholder="converters.placeholder.btc"
         />
       </label>
 
@@ -42,6 +49,7 @@
           type="text"
           name="eur"
           placeholder="EUR"
+          data-i18n-placeholder="converters.placeholder.eur"
         />
       </label>
     </div>
@@ -49,7 +57,7 @@
 
   <div class="markets-card" aria-label="Markets">
     <div class="markets-card__head">
-      <h2 class="markets-card__title">Markets</h2>
+      <h2 class="markets-card__title" data-i18n="markets.title">Markets</h2>
     </div>
 
     <div class="markets-card__body">
@@ -57,18 +65,28 @@
         <thead>
           <tr>
             <th>#</th>
-            <th>Exchange</th>
-            <th>Pair</th>
-            <th>Price</th>
-            <th>Confidence</th>
-            <th>Updated</th>
+            <th data-i18n="markets.col.exchange">Exchange</th>
+            <th data-i18n="markets.col.pair">Pair</th>
+            <th data-i18n="markets.col.price">Price</th>
+            <th data-i18n="markets.col.confidence">Confidence</th>
+            <th data-i18n="markets.col.updated">Updated</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
             <td>1</td>
-            <td class="markets-card__exchange">Binance</td>
+            <td
+              class="markets-card__exchange"
+              data-i18n="markets.row.exchange.binance"
+            >
+              <img
+                class="markets-card__exchange-logo"
+                src="img/logo-bitcoin.png"
+                alt="Bitcoin logo"
+              />
+              <p class="markets-card__exchange-text">Binance</p>
+            </td>
             <td>BTC/USDT</td>
             <td>$109,877.36</td>
             <td><span class="badge badge--high">High</span></td>
@@ -77,7 +95,17 @@
 
           <tr>
             <td>2</td>
-            <td class="markets-card__exchange">Coinbase</td>
+            <td
+              class="markets-card__exchange"
+              data-i18n="markets.row.exchange.coinbase"
+            >
+              <img
+                class="markets-card__exchange-logo"
+                src="img/logo-bitcoin.png"
+                alt="Bitcoin logo"
+              />
+              <p class="markets-card__exchange-text">Coinbase</p>
+            </td>
             <td>BTC/USD</td>
             <td>$109,900.12</td>
             <td><span class="badge badge--high">High</span></td>
@@ -86,7 +114,17 @@
 
           <tr>
             <td>3</td>
-            <td class="markets-card__exchange">Kraken</td>
+            <td
+              class="markets-card__exchange"
+              data-i18n="markets.row.exchange.kraken"
+            >
+              <img
+                class="markets-card__exchange-logo"
+                src="img/logo-bitcoin.png"
+                alt="Bitcoin logo"
+              />
+              <p class="markets-card__exchange-text">Kraken</p>
+            </td>
             <td>BTC/EUR</td>
             <td>$109,650.88</td>
             <td><span class="badge badge--medium">Medium</span></td>
@@ -95,7 +133,17 @@
 
           <tr>
             <td>4</td>
-            <td class="markets-card__exchange">Bitstamp</td>
+            <td
+              class="markets-card__exchange"
+              data-i18n="markets.row.exchange.bitstamp"
+            >
+              <img
+                class="markets-card__exchange-logo"
+                src="img/logo-bitcoin.png"
+                alt="Bitcoin logo"
+              />
+              <p class="markets-card__exchange-text">Bitstamp</p>
+            </td>
             <td>BTC/USD</td>
             <td>$109,999.00</td>
             <td><span class="badge badge--high">High</span></td>

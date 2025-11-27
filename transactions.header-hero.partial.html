@@ -1,26 +1,32 @@
 <div class="transactions-hero" role="region" aria-label="Transactions header">
   <div class="transactions-hero__inner">
-    <h1 class="transactions-hero__title">Transactions</h1>
+    <h1 class="transactions-hero__title" data-i18n="transactions.title">
+      Transactions
+    </h1>
 
     <div class="transactions-hero__controls" aria-label="Transaction filters">
       <form class="transactions-hero__form" action="#" method="get">
         <label
           for="transactions-search"
           class="transactions-hero__visually-hidden"
-          >Search</label
-        >
+          data-i18n="transactions.search_label"
+          >Search
+        </label>
         <input
           id="transactions-search"
           name="q"
           class="transactions-hero__search"
           type="search"
           placeholder="Search"
+          data-i18n-placeholder="transactions.search_placeholder"
           aria-label="Search transactions"
+          data-i18n="transactions.search_aria"
         />
 
         <label
           for="transactions-type"
           class="transactions-hero__visually-hidden"
+          data-i18n="transactions.type_label"
           >Transaction type</label
         >
         <select
@@ -28,16 +34,22 @@
           name="type"
           class="transactions-hero__select"
           aria-label="Transaction type"
+          data-i18n="transactions.type_select"
         >
-          <option value="">Transaction type</option>
-          <option value="received">Received</option>
-          <option value="sent">Sent</option>
-          <option value="swap">Swap</option>
+          <option value="" data-i18n="transactions.type.placeholder">
+            Transaction type
+          </option>
+          <option value="received" data-i18n="transactions.type.received">
+            Received
+          </option>
+          <option value="sent" data-i18n="transactions.type.sent">Sent</option>
+          <option value="swap" data-i18n="transactions.type.swap">Swap</option>
         </select>
 
         <label
           for="transactions-range"
           class="transactions-hero__visually-hidden"
+          data-i18n="transactions.range_label"
           >Date range</label
         >
         <input
@@ -46,7 +58,9 @@
           class="transactions-hero__daterange"
           type="text"
           placeholder="DD.MM.YYYY - DD.MM.YYYY"
+          data-i18n-placeholder="transactions.range_placeholder"
           aria-label="Date range"
+          data-i18n="transactions.range_aria"
         />
       </form>
 
@@ -54,8 +68,13 @@
         class="transactions-hero__btn transactions-hero__btn--download"
         type="button"
         aria-label="Download transactions"
+        data-i18n="transactions.download"
       >
-        Download
+        <img
+          class="transactions-hero__btn-icon"
+          src="img/load-icon.png"
+          alt="Load icon"
+        />
       </button>
     </div>
   </div>

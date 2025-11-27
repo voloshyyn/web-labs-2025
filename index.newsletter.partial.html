@@ -1,7 +1,9 @@
 <div class="newsletter">
   <div class="newsletter__content">
-    <h2 class="newsletter__title">Stay Ahead of the Market</h2>
-    <p class="newsletter__desc">
+    <h2 class="newsletter__title" data-i18n="newsletter.title">
+      Stay Ahead of the Market
+    </h2>
+    <p class="newsletter__desc" data-i18n="newsletter.desc">
       Please keep me updated by email with the latest crypto news, research
       findings, reward programs, event updates, coin listings and more
       information from TrackFi.
@@ -15,7 +17,10 @@
     novalidate
     aria-label="Subscribe to newsletter"
   >
-    <label for="newsletter-email" class="newsletter__label visually-hidden"
+    <label
+      for="newsletter-email"
+      class="newsletter__label visually-hidden"
+      data-i18n="newsletter.email_label"
       >Email address</label
     >
     <input
@@ -25,10 +30,15 @@
       type="email"
       inputmode="email"
       placeholder="Enter your email address"
+      data-i18n-placeholder="newsletter.email_placeholder"
       required
       aria-required="true"
     />
-    <button type="submit" class="newsletter__btn newsletter__btn--primary">
+    <button
+      type="submit"
+      class="newsletter__btn newsletter__btn--primary"
+      data-i18n="newsletter.subscribe"
+    >
       Subscribe
     </button>
   </form>

@@ -1,24 +1,72 @@
 <div class="transactions-list" aria-label="Transactions list">
-  <div class="transactions-list__inner">
+  <div class="transactions-list__inner" aria-label="Recent transactions">
     <div class="transactions-list__group">
-      <div class="transactions-list__date">
-        <p class="transactions-list__date-text">September 19, 2025</p>
-      </div>
+      <p class="transactions-list__date" data-i18n="transactions.date">
+        September 19, 2025
+      </p>
 
-      <article
-        class="transactions-list__card"
-        role="article"
-        aria-label="Received transaction"
-      >
+      <div class="transactions-list__item" aria-label="Received transaction">
+        <div class="transactions-list__headers" aria-hidden="true">
+          <div class="transactions-list__col transactions-list__col--type">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.type"
+            >
+              Type
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--assets">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.assets"
+            >
+              Asset(s)
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--current">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.current_value"
+            >
+              Current value
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--pl">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.pl"
+            >
+              P/L
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--portfolio">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.portfolio"
+            >
+              Portfolio
+            </p>
+          </div>
+        </div>
         <div class="transactions-list__col transactions-list__col--type">
           <div class="transactions-list__type">
-            <span class="transactions-list__type-label">Received</span>
+            <img
+              class="transactions-list__type-icon"
+              src="img/transaction-recieved-icon.png"
+              alt="Transaction received icon"
+            />
+            <p
+              class="transactions-list__type-label"
+              data-i18n="transactions.type.received"
+            >
+              Received
+            </p>
           </div>
         </div>
 
         <div class="transactions-list__col transactions-list__col--assets">
           <div class="transactions-list__assets">
-            <div class="transactions-list__asset-meta">
+            <div class="transactions-list__asset-values">
               <p class="transactions-list__asset-amount">0.00001 BTC</p>
               <p class="transactions-list__asset-sub">
                 $1.168 (1 BTC = $116,776.9)
@@ -28,12 +76,10 @@
         </div>
 
         <div class="transactions-list__col transactions-list__col--current">
-          <p class="transactions-list__label">Current value</p>
           <p class="transactions-list__current">$1.158</p>
         </div>
 
         <div class="transactions-list__col transactions-list__col--pl">
-          <p class="transactions-list__label">P/L</p>
           <div class="transactions-list__pl">
             <span class="transactions-list__pl-amount">$0</span>
             <span
@@ -47,34 +93,77 @@
           <div class="transactions-list__portfolio">
             <img
               class="transactions-list__avatar"
-              src="/img/avatar-placeholder.png"
-              alt="Bitcoin"
+              src="img/profile-avatar.png"
+              alt="Bitcoin portfolio avatar"
             />
             <span class="transactions-list__portfolio-name">Bitcoin</span>
           </div>
         </div>
-      </article>
+      </div>
     </div>
 
     <div class="transactions-list__group">
-      <div class="transactions-list__date">
-        <p class="transactions-list__date-text">September 19, 2025</p>
-      </div>
+      <p class="transactions-list__date" data-i18n="transactions.date">
+        September 19, 2025
+      </p>
 
-      <article
-        class="transactions-list__card"
-        role="article"
-        aria-label="Received transaction"
-      >
+      <div class="transactions-list__item" aria-label="Received transaction">
+        <div class="transactions-list__headers" aria-hidden="true">
+          <div class="transactions-list__col transactions-list__col--type">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.type"
+            >
+              Type
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--assets">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.assets"
+            >
+              Asset(s)
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--current">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.current_value"
+            >
+              Current value
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--pl">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.pl"
+            >
+              P/L
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--portfolio">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.portfolio"
+            >
+              Portfolio
+            </p>
+          </div>
+        </div>
         <div class="transactions-list__col transactions-list__col--type">
           <div class="transactions-list__type">
-            <span class="transactions-list__type-label">Received</span>
+            <img
+              class="transactions-list__type-icon"
+              src="img/transaction-recieved-icon.png"
+              alt="Transaction received icon"
+            />
+            <p class="transactions-list__type-label">Received</p>
           </div>
         </div>
 
         <div class="transactions-list__col transactions-list__col--assets">
           <div class="transactions-list__assets">
-            <div class="transactions-list__asset-meta">
+            <div class="transactions-list__asset-values">
               <p class="transactions-list__asset-amount">0.00001 BTC</p>
               <p class="transactions-list__asset-sub">
                 $1.168 (1 BTC = $116,776.9)
@@ -84,12 +173,9 @@
         </div>
 
         <div class="transactions-list__col transactions-list__col--current">
-          <p class="transactions-list__label">Current value</p>
           <p class="transactions-list__current">$1.158</p>
         </div>
-
         <div class="transactions-list__col transactions-list__col--pl">
-          <p class="transactions-list__label">P/L</p>
           <div class="transactions-list__pl">
             <span class="transactions-list__pl-amount">$0</span>
             <span
@@ -103,54 +189,100 @@
           <div class="transactions-list__portfolio">
             <img
               class="transactions-list__avatar"
-              src="/img/avatar-placeholder.png"
-              alt="Bitcoin"
+              src="img/profile-avatar.png"
+              alt="Bitcoin portfolio avatar"
             />
             <span class="transactions-list__portfolio-name">Bitcoin</span>
           </div>
         </div>
-      </article>
+      </div>
     </div>
 
     <div class="transactions-list__group">
-      <div class="transactions-list__date">
-        <p class="transactions-list__date-text">September 19, 2025</p>
-      </div>
+      <p class="transactions-list__date">September 19, 2025</p>
 
-      <article
-        class="transactions-list__card"
-        role="article"
-        aria-label="Received transaction"
-      >
+      <div class="transactions-list__item" aria-label="Sent transaction">
+        <div class="transactions-list__headers" aria-hidden="true">
+          <div class="transactions-list__col transactions-list__col--type">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.type"
+            >
+              Type
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--assets">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.assets"
+            >
+              Asset(s)
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--current">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.current_value"
+            >
+              Current value
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--pl">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.pl"
+            >
+              P/L
+            </p>
+          </div>
+          <div class="transactions-list__col transactions-list__col--portfolio">
+            <p
+              class="transactions-list__header"
+              data-i18n="transactions.headers.portfolio"
+            >
+              Portfolio
+            </p>
+          </div>
+        </div>
         <div class="transactions-list__col transactions-list__col--type">
           <div class="transactions-list__type">
-            <span class="transactions-list__type-label">Received</span>
+            <img
+              class="transactions-list__type-icon"
+              src="img/transaction-sent-icon.png"
+              alt="Transaction sent icon"
+            />
+            <p class="transactions-list__type-label">Sent</p>
           </div>
         </div>
 
         <div class="transactions-list__col transactions-list__col--assets">
           <div class="transactions-list__assets">
-            <div class="transactions-list__asset-meta">
-              <p class="transactions-list__asset-amount">0.00001 BTC</p>
+            <div class="transactions-list__asset-values">
+              <p
+                class="transactions-list__asset-amount transactions-list__asset-amount--negative"
+              >
+                -500 BTC
+              </p>
               <p class="transactions-list__asset-sub">
-                $1.168 (1 BTC = $116,776.9)
+                $75,387,738 (1 BTC = $116,776.9)
               </p>
             </div>
           </div>
         </div>
 
         <div class="transactions-list__col transactions-list__col--current">
-          <p class="transactions-list__label">Current value</p>
-          <p class="transactions-list__current">$1.158</p>
+          <p class="transactions-list__current">$74,070,309.81</p>
         </div>
 
         <div class="transactions-list__col transactions-list__col--pl">
-          <p class="transactions-list__label">P/L</p>
           <div class="transactions-list__pl">
-            <span class="transactions-list__pl-amount">$0</span>
             <span
-              class="transactions-list__pl-pct transactions-list__pl-pct--positive"
-              >0.05%</span
+              class="transactions-list__pl-amount transactions-list__pl-amount--negative"
+              >$683.08</span
+            >
+            <span
+              class="transactions-list__pl-pct transactions-list__pl-pct--negative"
+              >-1.94%</span
             >
           </div>
         </div>
@@ -159,13 +291,13 @@
           <div class="transactions-list__portfolio">
             <img
               class="transactions-list__avatar"
-              src="/img/avatar-placeholder.png"
-              alt="Bitcoin"
+              src="img/profile-avatar.png"
+              alt="Bitcoin portfolio avatar"
             />
             <span class="transactions-list__portfolio-name">Bitcoin</span>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   </div>
 </div>
