@@ -2,41 +2,45 @@
 @use '../base/global';
 
 .newsletter {
-    @extend .container;
-    padding: ($spacing-unit * 8) 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: ($spacing-unit * 4);
+    padding: ($spacing-unit * 5.625) 0;
+    margin: ($spacing-unit * 5.625) 0;
+    background-color: $color-bg-secondary;
 
-    @media (min-width: $bp-tablet) {
-        flex-direction: row;
-        text-align: left;
-        justify-content: space-between;
+    &__inner {
+        @extend .container;
+        align-items: center;
+
+            @media (min-width: $bp-tablet) {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+        }
     }
 
     &__content {
-        max-width: 500px;
+        max-width: 750px;
+        line-height: 1.5;
     }
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 32px;
         font-weight: 700;
-        color: $color-text-dark;
-        margin-bottom: $spacing-unit;
+        color: $color-text-primary;
+        margin-bottom: ($spacing-unit * 1.25);
     }
 
     &__desc {
-        color: $color-text-light;
+        color: $color-text-secondary;
+        font-size: 16px;
+        margin-bottom: ($spacing-unit * 5);
     }
 
     &__form {
         display: flex;
-        gap: $spacing-unit;
+        gap: ($spacing-unit * 3.75);
         width: 100%;
-        max-width: 400px;
         flex-direction: column;
+        height: 45px;
 
         @media (min-width: $bp-mobile) {
             flex-direction: row;
@@ -44,33 +48,44 @@
     }
 
     &__input {
-        flex: 1;
-        padding: ($spacing-unit * 1.5);
-        border: 1px solid $color-border;
-        border-radius: 4px;
-        font-size: 1rem;
+        padding: ($spacing-unit * 1.5) ($spacing-unit * 15.375) ($spacing-unit * 1.5) ($spacing-unit * 1.5);
+        border: 0;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: $color-input-line;
+        color: $color-text-primary;
+
+        &::placeholder {
+            color: $color-input-line-text;
+        }
 
         &:focus {
             outline: none;
-            border-color: $color-primary;
+            border-color: $color-btn-primary;
         }
     }
 
     &__btn {
-        padding: ($spacing-unit * 1.5) ($spacing-unit * 3);
-        border-radius: 4px;
+        padding: ($spacing-unit * 1.5) ($spacing-unit * 4.5);
+        border-radius: 10px;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 15px;
         cursor: pointer;
         border: none;
         white-space: nowrap;
-
+        transition: background-color 0.2s;
+ 
         &--primary {
-            background-color: $color-primary;
+            background-color: $color-btn-primary;
             color: $color-white;
+            box-shadow: 0 0 10px -1px rgba(255, 107, 92, 0.3), 0 0 10px -1px rgba(255, 107, 92, 0.3);
 
             &:hover {
-                background-color: darken($color-primary, 10%);
+                padding: ($spacing-unit * 1.5) ($spacing-unit * 4.375);
+                background-color: $color-white;
+                border: 1px solid $color-btn-primary;
+                color: $color-btn-primary;
             }
         }
     }

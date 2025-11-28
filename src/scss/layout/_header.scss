@@ -10,17 +10,17 @@
         @extend .container;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+    }
+
+    &__logo {
+        height: 30px;
+        width: auto;
+        margin-right: ($spacing-unit * 2.5);
     }
 
     &__brand {
         display: flex;
         align-items: center;
-    }
-
-    &__logo {
-        height: 32px;
-        width: auto;
     }
 
     &__nav {
@@ -33,30 +33,32 @@
 
     &__list {
         display: flex;
-        gap: ($spacing-unit * 4);
+        gap: ($spacing-unit * 2.5);
+
     }
 
     &__link {
         font-weight: 500;
-        color: $color-text-dark;
+        color: $color-text-primary;
         font-size: 14px;
 
         &:hover {
-            color: $color-primary;
+            color: $color-btn-primary;
         }
     }
 
     &__actions {
         display: flex;
         align-items: center;
-        gap: ($spacing-unit * 2);
+        gap: ($spacing-unit * 3.125);
+        margin-left: auto;
     }
 
     &__watchlist {
         display: flex;
         align-items: center;
         gap: $spacing-unit;
-        color: $color-text-dark;
+        color: $color-text-primary;
         font-weight: 500;
         font-size: 14px;
         
@@ -75,16 +77,22 @@
         }
 
         &-input {
-            padding: $spacing-unit ($spacing-unit * 4) $spacing-unit ($spacing-unit * 4);
-            border: 1px solid $color-border;
-            border-radius: 4px;
-            background-color: $color-bg-light;
+            padding: $spacing-unit ($spacing-unit * 4);
+            border-radius: 10px;
+            background-color: $color-input-line;
+            color: $color-text-primary;
             font-size: 14px;
-            width: 200px;
+            font-weight: 600;
+            max-width: 250px;
+            height: 40px;
+            border: 0;
+
+            &::placeholder {
+            color: $color-input-line-text;
+        }
             
             &:focus {
                 outline: none;
-                border-color: $color-primary;
             }
         }
 
@@ -100,8 +108,10 @@
     }
 
     &__btn {
-        padding: $spacing-unit ($spacing-unit * 2);
-        border-radius: 4px;
+        padding: $spacing-unit ($spacing-unit * 2.4);
+        max-width: 80px;
+        height: 40px;
+        border-radius: 10px;
         font-weight: 600;
         font-size: 14px;
         cursor: pointer;
@@ -109,11 +119,16 @@
         transition: background-color 0.2s;
 
         &--primary {
-            background-color: $color-primary;
+            background-color: $color-btn-primary;
             color: $color-white;
+            box-shadow: 0 0 10px -1px rgba(255, 107, 92, 0.3), 0 0 10px -1px rgba(255, 107, 92, 0.3);
 
             &:hover {
-                background-color: darken($color-primary, 10%);
+                padding: $spacing-unit ($spacing-unit * 2.275);
+                max-width: 80px;
+                background-color: $color-white;
+                border: 1px solid $color-btn-primary;
+                color: $color-btn-primary;
             }
         }
     }

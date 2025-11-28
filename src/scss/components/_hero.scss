@@ -4,20 +4,21 @@
 .header-hero {
     @extend .container;
     text-align: center;
-    padding: ($spacing-unit * 10) 0;
+    padding: ($spacing-unit * 12.5) 0 ($spacing-unit * 25) 0;
 
     &__title {
-        font-size: 3rem;
+        font-size: 48px;
         font-weight: 700;
-        color: $color-text-dark;
+        color: $color-text-primary;
+        font-family: $font-secondary;
         margin-bottom: ($spacing-unit * 2);
         line-height: 1.2;
     }
 
     &__subtitle {
-        font-size: 1.125rem;
-        color: $color-text-light;
-        margin-bottom: ($spacing-unit * 4);
+        font-size: 16px;
+        color: $color-text-secondary;
+        margin-bottom: ($spacing-unit * 5);
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -29,21 +30,25 @@
     }
 
     &__cta {
-        padding: ($spacing-unit * 1.5) ($spacing-unit * 4);
-        border-radius: 4px;
+        padding: ($spacing-unit * 1) ($spacing-unit * 8);
+        border-radius: 10px;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 16px;
+        height: 50px;
         cursor: pointer;
         border: none;
         transition: background-color 0.2s;
 
         &--primary {
-            background-color: $color-primary;
+            background-color: $color-btn-primary;
             color: $color-white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 10px -1px rgba(255, 107, 92, 0.3), 0 0 10px -1px rgba(255, 107, 92, 0.3);
 
             &:hover {
-                background-color: darken($color-primary, 10%);
+                 padding: ($spacing-unit * 1) ($spacing-unit * 7.875);
+                background-color: $color-white;
+                border: 1px solid $color-btn-primary;
+                color: $color-btn-primary;
             }
         }
     }

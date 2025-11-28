@@ -2,8 +2,8 @@
 
 body {
     font-family: $font-primary;
-    color: $color-text-dark;
-    line-height: 1.5;
+    color: $color-text-primary;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     background-color: $color-white;
 }
@@ -15,6 +15,7 @@ a {
 
     &:hover {
         opacity: 0.8;
+         transition: background-color 0.2s;
     }
 }
 
@@ -26,7 +27,7 @@ ul {
     width: 100%;
     max-width: $bp-large;
     margin: 0 auto;
-    padding: 0 ($spacing-unit * 2);
+
 }
 
 .visually-hidden {

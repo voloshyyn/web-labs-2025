@@ -2,37 +2,36 @@
 @use '../base/global';
 
 .global-footer {
-    @extend .container;
-    padding: ($spacing-unit * 8) 0;
+    padding: ($spacing-unit * 5.675) 0;
     border-top: 1px solid $color-border;
-    display: flex;
-    flex-direction: column;
-    gap: ($spacing-unit * 4);
 
-    @media (min-width: $bp-tablet) {
+    &__inner {
+        @extend .container;
+        display: flex;
+        flex-direction: column;
+        gap: ($spacing-unit * 4);
+
+        @media (min-width: $bp-tablet) {
         flex-direction: row;
         justify-content: space-between;
+    }
     }
 
     &__brand {
         display: flex;
         flex-direction: column;
-        gap: ($spacing-unit * 2);
+        justify-content: space-between; 
     }
 
-    &__logo {
-        height: 32px;
-        width: auto;
-    }
 
     &__copy {
-        font-size: 0.875rem;
-        color: $color-text-light;
+        font-size: 14px;
+        color: $color-footer-text;
     }
 
     &__cols {
         display: flex;
-        gap: ($spacing-unit * 8);
+        gap: ($spacing-unit * 18.375);
         flex-wrap: wrap;
     }
 
@@ -44,7 +43,7 @@
 
     &__col-title {
         font-weight: 600;
-        color: $color-text-dark;
+        color: $color-text-primary;
     }
 
     &__list {
@@ -54,11 +53,11 @@
     }
 
     &__link {
-        color: $color-text-light;
+        color: $color-text-secondary;
         font-size: 0.875rem;
 
         &:hover {
-            color: $color-primary;
+            color: $color-btn-primary;
         }
     }
 }

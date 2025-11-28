@@ -3,13 +3,15 @@
 
 .benefit-cards {
     @extend .container;
-    padding: ($spacing-unit * 8) 0;
+    padding: ($spacing-unit * 5.625) 0;
     border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
 
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
-        gap: ($spacing-unit * 4);
+        gap: ($spacing-unit * 5.625);
+        padding: 0 ($spacing-unit * 5.625);
 
         @media (min-width: $bp-tablet) {
             grid-template-columns: repeat(2, 1fr);
@@ -21,31 +23,29 @@
     }
 
     &__card {
-        background-color: $color-bg-light;
-        padding: ($spacing-unit * 4);
-        border-radius: 16px;
+        background-color: $color-bg-secondary;
+        padding: ($spacing-unit * 5) ($spacing-unit * 3.75);
+        border-radius: 25px;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         img {
-            width: 64px;
-            height: 64px;
-            margin-bottom: ($spacing-unit * 2);
+           margin-bottom: ($spacing-unit * 3.75);
         }
     }
 
     &__title {
         font-size: 1.125rem;
         font-weight: 600;
-        color: $color-text-dark;
-        margin-bottom: $spacing-unit;
+        color: $color-text-primary;
+        margin-bottom: ($spacing-unit * 1.25);
     }
 
     &__desc {
         font-size: 0.875rem;
-        color: $color-text-light;
+        color: $color-text-secondary;
         line-height: 1.5;
     }
 }
