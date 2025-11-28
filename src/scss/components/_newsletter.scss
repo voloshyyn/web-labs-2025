@@ -1,0 +1,77 @@
+@use '../abstracts/var' as *;
+@use '../base/global';
+
+.newsletter {
+    @extend .container;
+    padding: ($spacing-unit * 8) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: ($spacing-unit * 4);
+
+    @media (min-width: $bp-tablet) {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 500px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $color-text-dark;
+        margin-bottom: $spacing-unit;
+    }
+
+    &__desc {
+        color: $color-text-light;
+    }
+
+    &__form {
+        display: flex;
+        gap: $spacing-unit;
+        width: 100%;
+        max-width: 400px;
+        flex-direction: column;
+
+        @media (min-width: $bp-mobile) {
+            flex-direction: row;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        padding: ($spacing-unit * 1.5);
+        border: 1px solid $color-border;
+        border-radius: 4px;
+        font-size: 1rem;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary;
+        }
+    }
+
+    &__btn {
+        padding: ($spacing-unit * 1.5) ($spacing-unit * 3);
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        white-space: nowrap;
+
+        &--primary {
+            background-color: $color-primary;
+            color: $color-white;
+
+            &:hover {
+                background-color: darken($color-primary, 10%);
+            }
+        }
+    }
+}

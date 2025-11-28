@@ -1,0 +1,64 @@
+@use '../abstracts/var' as *;
+@use '../base/global';
+
+.global-footer {
+    @extend .container;
+    padding: ($spacing-unit * 8) 0;
+    border-top: 1px solid $color-border;
+    display: flex;
+    flex-direction: column;
+    gap: ($spacing-unit * 4);
+
+    @media (min-width: $bp-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__brand {
+        display: flex;
+        flex-direction: column;
+        gap: ($spacing-unit * 2);
+    }
+
+    &__logo {
+        height: 32px;
+        width: auto;
+    }
+
+    &__copy {
+        font-size: 0.875rem;
+        color: $color-text-light;
+    }
+
+    &__cols {
+        display: flex;
+        gap: ($spacing-unit * 8);
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: ($spacing-unit * 2);
+    }
+
+    &__col-title {
+        font-weight: 600;
+        color: $color-text-dark;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-unit;
+    }
+
+    &__link {
+        color: $color-text-light;
+        font-size: 0.875rem;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

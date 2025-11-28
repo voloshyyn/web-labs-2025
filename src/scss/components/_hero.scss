@@ -1,0 +1,50 @@
+@use '../abstracts/var' as *;
+@use '../base/global';
+
+.header-hero {
+    @extend .container;
+    text-align: center;
+    padding: ($spacing-unit * 10) 0;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-text-dark;
+        margin-bottom: ($spacing-unit * 2);
+        line-height: 1.2;
+    }
+
+    &__subtitle {
+        font-size: 1.125rem;
+        color: $color-text-light;
+        margin-bottom: ($spacing-unit * 4);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__cta {
+        padding: ($spacing-unit * 1.5) ($spacing-unit * 4);
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.2s;
+
+        &--primary {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+            &:hover {
+                background-color: darken($color-primary, 10%);
+            }
+        }
+    }
+}

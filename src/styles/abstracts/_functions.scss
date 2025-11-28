@@ -1,6 +1,0 @@
-// _functions.scss
-@use "sass:math";
-
-@function rem($px, $base: 16) {
-  @return math.div($px, $base) * 1rem;
-}

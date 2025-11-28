@@ -1,0 +1,120 @@
+@use '../abstracts/var' as *;
+@use '../base/global';
+
+.header-nav {
+    background-color: $color-white;
+    border-bottom: 1px solid $color-border;
+    padding: ($spacing-unit * 2) 0;
+
+    &__inner {
+        @extend .container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 32px;
+        width: auto;
+    }
+
+    &__nav {
+        display: none;
+
+        @media (min-width: $bp-tablet) {
+            display: block;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: ($spacing-unit * 4);
+    }
+
+    &__link {
+        font-weight: 500;
+        color: $color-text-dark;
+        font-size: 14px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: ($spacing-unit * 2);
+    }
+
+    &__watchlist {
+        display: flex;
+        align-items: center;
+        gap: $spacing-unit;
+        color: $color-text-dark;
+        font-weight: 500;
+        font-size: 14px;
+        
+        &-icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__search {
+        position: relative;
+        display: none;
+
+        @media (min-width: $bp-desktop) {
+            display: block;
+        }
+
+        &-input {
+            padding: $spacing-unit ($spacing-unit * 4) $spacing-unit ($spacing-unit * 4);
+            border: 1px solid $color-border;
+            border-radius: 4px;
+            background-color: $color-bg-light;
+            font-size: 14px;
+            width: 200px;
+            
+            &:focus {
+                outline: none;
+                border-color: $color-primary;
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            left: $spacing-unit;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            pointer-events: none;
+        }
+    }
+
+    &__btn {
+        padding: $spacing-unit ($spacing-unit * 2);
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.2s;
+
+        &--primary {
+            background-color: $color-primary;
+            color: $color-white;
+
+            &:hover {
+                background-color: darken($color-primary, 10%);
+            }
+        }
+    }
+}
