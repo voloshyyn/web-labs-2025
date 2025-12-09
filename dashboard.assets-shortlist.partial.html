@@ -1,221 +1,243 @@
 <div class="assets-shortlist" aria-label="Assets shortlist">
-  <header class="assets-shortlist__header">
-    <h2 class="assets-shortlist__title" data-i18n="assets_shortlist.title">
-      Assets
-    </h2>
-    <button
-      class="assets-shortlist__see-more-btn"
-      type="button"
-      data-i18n="assets_shortlist.see_more"
-    >
-      See More Assets
-    </button>
-  </header>
-
-  <div class="assets-shortlist__table-wrap">
-    <table class="assets-shortlist__table" aria-label="Assets table">
-      <thead class="assets-shortlist__thead">
-        <tr class="assets-shortlist__tr">
-          <th
-            class="assets-shortlist__th"
-            data-i18n="assets_shortlist.col.name"
-          >
-            Name
-          </th>
-          <th
-            class="assets-shortlist__th"
-            data-i18n="assets_shortlist.col.amount"
-          >
-            Amount
-          </th>
-          <th
-            class="assets-shortlist__th"
-            data-i18n="assets_shortlist.col.change"
-          >
-            24h Change
-          </th>
-          <th
-            class="assets-shortlist__th"
-            data-i18n="assets_shortlist.col.price"
-          >
-            Price
-          </th>
-          <th
-            class="assets-shortlist__th"
-            data-i18n="assets_shortlist.col.total"
-          >
-            Total
-          </th>
-          <th class="assets-shortlist__th" data-i18n="assets_shortlist.col.pl">
-            P/L
-          </th>
-          <th class="assets-shortlist__th assets-shortlist__th--actions"></th>
-        </tr>
-      </thead>
-
-      <tbody class="assets-shortlist__tbody">
-        <tr class="assets-shortlist__tr">
-          <td class="assets-shortlist__td assets-shortlist__td--name">
-            <div class="assets-shortlist__cell">
-              <img
-                class="assets-shortlist__icon"
-                src="img/logo-bitcoin.png"
-                alt="Bitcoin logo"
-              />
-              <span class="assets-shortlist__name">Bitcoin</span>
-            </div>
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--amount">
-            56,150.24
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--change">
-            <span
-              class="assets-shortlist__badge assets-shortlist__badge--negative"
-              >-1.29%</span
+  <div class="container assets-shortlist__container">
+    <div class="assets-shortlist__table-wrap">
+      <div class="assets-shortlist__table-title">
+        <h2 class="assets-shortlist__title" data-i18n="assets_shortlist.title">
+          Assets
+        </h2>
+        <button
+          class="assets-shortlist__see-more-btn"
+          type="button"
+          data-i18n="assets_shortlist.see_more"
+        >
+          See More Assets
+        </button>
+      </div>
+      <table class="assets-shortlist__table" aria-label="Assets table">
+        <thead class="assets-shortlist__thead">
+          <tr class="assets-shortlist__tr">
+            <th
+              class="assets-shortlist__th assets-shortlist__th-name"
+              data-i18n="assets_shortlist.col.name"
             >
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--price">
-            $115,851.89
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--total">
-            $6,505,111,721.68
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--pl">
-            <div class="assets-shortlist__pl">
-              <span
-                class="assets-shortlist__pl-amount assets-shortlist__pl-amount--positive"
-                >$317,426,288.25</span
-              >
-              <span
-                class="assets-shortlist__pl-pct assets-shortlist__pl-pct--positive"
-                >3.41%</span
-              >
-            </div>
-          </td>
-
-          <td
-            class="assets-shortlist__td assets-shortlist__td--actions"
-            aria-hidden="true"
-          >
-            <button class="assets-shortlist__more-btn" aria-label="Row actions">
-              <img src="" alt="" />
-            </button>
-          </td>
-        </tr>
-
-        <tr class="assets-shortlist__tr">
-          <td class="assets-shortlist__td assets-shortlist__td--name">
-            <div class="assets-shortlist__cell">
-              <img
-                class="assets-shortlist__icon"
-                src="img/logo-bitcoin.png"
-                alt="Bitcoin logo"
-              />
-              <span class="assets-shortlist__name">Bitcoin</span>
-            </div>
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--amount">
-            56,150.24
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--change">
-            <span
-              class="assets-shortlist__badge assets-shortlist__badge--negative"
-              >-1.29%</span
+              Name
+            </th>
+            <th
+              class="assets-shortlist__th"
+              data-i18n="assets_shortlist.col.amount"
             >
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--price">
-            $115,851.89
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--total">
-            $6,505,111,721.68
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--pl">
-            <div class="assets-shortlist__pl">
-              <span
-                class="assets-shortlist__pl-amount assets-shortlist__pl-amount--positive"
-                >$317,426,288.25</span
-              >
-              <span
-                class="assets-shortlist__pl-pct assets-shortlist__pl-pct--positive"
-                >3.41%</span
-              >
-            </div>
-          </td>
-
-          <td
-            class="assets-shortlist__td assets-shortlist__td--actions"
-            aria-hidden="true"
-          >
-            <button class="assets-shortlist__more-btn" aria-label="Row actions">
-              <img src="" alt="" />
-            </button>
-          </td>
-        </tr>
-
-        <tr class="assets-shortlist__tr">
-          <td class="assets-shortlist__td assets-shortlist__td--name">
-            <div class="assets-shortlist__cell">
-              <img
-                class="assets-shortlist__icon"
-                src="img/logo-bitcoin.png"
-                alt="Bitcoin logo"
-              />
-              <span class="assets-shortlist__name">Bitcoin</span>
-            </div>
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--amount">
-            56,150.24
-          </td>
-
-          <td class="assets-shortlist__td assets-shortlist__td--change">
-            <span
-              class="assets-shortlist__badge assets-shortlist__badge--negative"
-              >-1.29%</span
+              Amount
+            </th>
+            <th
+              class="assets-shortlist__th"
+              data-i18n="assets_shortlist.col.change"
             >
-          </td>
+              24h Change
+            </th>
+            <th
+              class="assets-shortlist__th"
+              data-i18n="assets_shortlist.col.price"
+            >
+              Price
+            </th>
+            <th
+              class="assets-shortlist__th"
+              data-i18n="assets_shortlist.col.total"
+            >
+              Total
+            </th>
+            <th
+              class="assets-shortlist__th"
+              data-i18n="assets_shortlist.col.pl"
+            >
+              P/L
+            </th>
+            <th
+              class="assets-shortlist__th-settings"
+              data-i18n="assets_shortlist.col.pl"
+            >
+              <img
+                class="assets-shortlist__settings-icon"
+                src="img/settings-icon.png"
+                alt="Settings"
+              />
+            </th>
+          </tr>
+        </thead>
 
-          <td class="assets-shortlist__td assets-shortlist__td--price">
-            $115,851.89
-          </td>
+        <tbody class="assets-shortlist__tbody">
+          <tr class="assets-shortlist__tr">
+            <td class="assets-shortlist__td assets-shortlist__td--name">
+              <div class="assets-shortlist__cell">
+                <img
+                  class="assets-shortlist__icon"
+                  src="img/logo-bitcoin.png"
+                  alt="Bitcoin logo"
+                />
+                <span class="assets-shortlist__name">Bitcoin</span>
+              </div>
+            </td>
 
-          <td class="assets-shortlist__td assets-shortlist__td--total">
-            $6,505,111,721.68
-          </td>
+            <td class="assets-shortlist__td assets-shortlist__td--amount">
+              56,150.24
+            </td>
 
-          <td class="assets-shortlist__td assets-shortlist__td--pl">
-            <div class="assets-shortlist__pl">
+            <td class="assets-shortlist__td assets-shortlist__td--change">
               <span
-                class="assets-shortlist__pl-amount assets-shortlist__pl-amount--positive"
-                >$317,426,288.25</span
+                class="assets-shortlist__badge assets-shortlist__badge--negative"
+                >-1.29%</span
               >
-              <span
-                class="assets-shortlist__pl-pct assets-shortlist__pl-pct--positive"
-                >3.41%</span
-              >
-            </div>
-          </td>
+            </td>
 
-          <td
-            class="assets-shortlist__td assets-shortlist__td--actions"
-            aria-hidden="true"
-          >
-            <button class="assets-shortlist__more-btn" aria-label="Row actions">
-              <img src="" alt="" />
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            <td class="assets-shortlist__td assets-shortlist__td--price">
+              $115,851.89
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--total">
+              $6,505,111,721.68
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--pl">
+              <div class="assets-shortlist__pl">
+                <span
+                  class="assets-shortlist__pl-amount assets-shortlist__pl-amount--positive"
+                  >$317,426,288.25</span
+                >
+                <span
+                  class="assets-shortlist__pl-pct assets-shortlist__pl-pct--positive"
+                  >3.41%</span
+                >
+              </div>
+            </td>
+
+            <td
+              class="assets-shortlist__td assets-shortlist__td--actions"
+              aria-hidden="true"
+            >
+              <button
+                class="assets-shortlist__more-btn"
+                aria-label="Row actions"
+              >
+                <img src="" alt="" />
+              </button>
+            </td>
+          </tr>
+
+          <tr class="assets-shortlist__tr">
+            <td class="assets-shortlist__td assets-shortlist__td--name">
+              <div class="assets-shortlist__cell">
+                <img
+                  class="assets-shortlist__icon"
+                  src="img/logo-bitcoin.png"
+                  alt="Bitcoin logo"
+                />
+                <span class="assets-shortlist__name">Bitcoin</span>
+              </div>
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--amount">
+              56,150.24
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--change">
+              <span
+                class="assets-shortlist__badge assets-shortlist__badge--negative"
+                >-1.29%</span
+              >
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--price">
+              $115,851.89
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--total">
+              $6,505,111,721.68
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--pl">
+              <div class="assets-shortlist__pl">
+                <span
+                  class="assets-shortlist__pl-amount assets-shortlist__pl-amount--positive"
+                  >$317,426,288.25</span
+                >
+                <span
+                  class="assets-shortlist__pl-pct assets-shortlist__pl-pct--positive"
+                  >3.41%</span
+                >
+              </div>
+            </td>
+
+            <td
+              class="assets-shortlist__td assets-shortlist__td--actions"
+              aria-hidden="true"
+            >
+              <button
+                class="assets-shortlist__more-btn"
+                aria-label="Row actions"
+              >
+                <img src="" alt="" />
+              </button>
+            </td>
+          </tr>
+
+          <tr class="assets-shortlist__tr">
+            <td class="assets-shortlist__td assets-shortlist__td--name">
+              <div class="assets-shortlist__cell">
+                <img
+                  class="assets-shortlist__icon"
+                  src="img/logo-bitcoin.png"
+                  alt="Bitcoin logo"
+                />
+                <span class="assets-shortlist__name">Bitcoin</span>
+              </div>
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--amount">
+              56,150.24
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--change">
+              <span
+                class="assets-shortlist__badge assets-shortlist__badge--negative"
+                >-1.29%</span
+              >
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--price">
+              $115,851.89
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--total">
+              $6,505,111,721.68
+            </td>
+
+            <td class="assets-shortlist__td assets-shortlist__td--pl">
+              <div class="assets-shortlist__pl">
+                <span
+                  class="assets-shortlist__pl-amount assets-shortlist__pl-amount--positive"
+                  >$317,426,288.25</span
+                >
+                <span
+                  class="assets-shortlist__pl-pct assets-shortlist__pl-pct--positive"
+                  >3.41%</span
+                >
+              </div>
+            </td>
+
+            <td
+              class="assets-shortlist__td assets-shortlist__td--actions"
+              aria-hidden="true"
+            >
+              <button
+                class="assets-shortlist__more-btn"
+                aria-label="Row actions"
+              >
+                <img src="" alt="" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

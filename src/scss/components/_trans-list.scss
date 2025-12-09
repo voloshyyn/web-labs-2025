@@ -1,0 +1,55 @@
+@use '../abstracts/var' as *;
+@use '../base/global';
+
+/* Flat transactions list: same columns/layout as dashboard, but no card background or shadow */
+.transactions-list {
+	padding-top: ($spacing-unit * 4);
+
+	&__container { @extend .container; }
+
+	&__date {
+		color: $color-text-primary;
+		font-weight: 700;
+		margin: 0 0 ($spacing-unit * 3) 0;
+	}
+
+	&__group { margin-bottom: ($spacing-unit * 4); }
+
+	&__item {
+		display: grid;
+		grid-template-columns: 140px 1fr 160px 140px 140px;
+		gap: ($spacing-unit * 4);
+		align-items: center;
+		padding: 18px 24px;
+		min-height: 70px;
+		background: $color-white;
+		border: 1px solid $color-border;
+		box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+		border-radius: 12px;
+		margin-bottom: ($spacing-unit * 3);
+	}
+
+	&__item:last-child { margin-bottom: 0; }
+
+	&__headers { display: none; }
+
+	&__type { display: flex; align-items: center; gap: ($spacing-unit * 2); }
+	&__type-icon { width: 40px; height: 40px; }
+	&__type-label { font-weight: 700; color: $color-text-primary; }
+
+	&__asset-amount { font-weight: 700; color: $color-btn-primary; font-size: 1rem; }
+	&__asset-sub { color: $color-text-secondary; font-size: 0.8125rem; margin-top: ($spacing-unit * 0.5); }
+
+	&__current { font-weight: 700; font-size: 1rem; text-align: right; }
+
+	&__pl { display: flex; flex-direction: column; align-items: flex-end; gap: ($spacing-unit * 0.5); }
+	&__pl-amount { font-weight: 700; }
+	&__pl-pct { font-size: 0.875rem; color: $color-text-secondary; }
+
+	&__portfolio { display: flex; align-items: center; gap: ($spacing-unit * 1); }
+	&__avatar { width: 32px; height: 32px; border-radius: 50%; }
+
+	@media (max-width: $bp-tablet) {
+		&__item { grid-template-columns: 1fr; gap: ($spacing-unit * 1.5); padding: 14px; }
+	}
+}

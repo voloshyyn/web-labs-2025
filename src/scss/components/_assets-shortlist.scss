@@ -1,0 +1,166 @@
+@use '../abstracts/var' as *;
+@use '../base/global';
+
+.assets-shortlist {
+    padding-top: ($spacing-unit * 5.625);
+
+    &__container { @extend .container; }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        color: $color-text-primary;
+        font-family: $font-secondary;
+        margin: 0;
+    }
+
+    &__see-more-btn {
+        background: transparent;
+        border: 1px solid $color-border;
+        padding: ($spacing-unit * 0.375) ($spacing-unit * 1);
+        border-radius: 999px;
+        color: $color-text-primary;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        /* align in the table-title layout */
+    }
+
+    &__table-wrap {
+        overflow: hidden;
+        border-radius: 16px;
+        background-color: $color-white;
+        border: 1px solid $color-border;
+        box-shadow: 0 18px 40px rgba(16,24,40,0.06);
+        position: relative;
+        padding: 0;
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__table-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: ($spacing-unit * 2);
+            padding: ($spacing-unit * 3) ($spacing-unit * 3);
+            border-bottom: 1px solid $color-border;
+            background: $color-white;
+            border-radius: 16px 16px 0 0;
+        }
+
+    &__thead {
+        background: transparent;
+    }
+
+    &__th {
+        text-align: center;
+        color: $color-text-secondary;
+        font-size: 14px;
+        padding: 0 60px; /* keep horizontal padding */
+        height: 70px; /* fixed row height */
+        white-space: nowrap;
+
+        &-settings {
+            position: relative;
+            padding-right: ($spacing-unit * 1);
+            vertical-align: middle;
+        }
+        &-name {
+            text-align: left;
+            padding-left: ($spacing-unit * 3); /* align under .assets-shortlist__table-title */
+        }
+    }
+
+    
+
+    &__tr {
+        transition: background-color 0.15s ease;
+        height: 70px; /* enforce row height */
+    }
+
+    &__td {
+        text-align: center;
+        padding: 0 60px; /* horizontal padding kept, vertical space controlled by row height */
+        height: 70px; /* fixed cell height */
+        border-top: 1px solid $color-border;
+        vertical-align: middle;
+        color: $color-text-primary;
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    /* Column specific overrides */
+    &__td--name { text-align: left; padding-left: ($spacing-unit * 3); }
+    &__td--amount { text-align: center; }
+    &__td--change { text-align: center; }
+    &__td--price { text-align: center; }
+    &__td--total { text-align: center; font-weight: 700; }
+    &__td--pl { text-align: right; }
+
+    &__tr:hover {
+        background-color: lighten($color-white, 1%);
+    }
+
+    &__cell {
+        display: flex;
+        align-items: center;
+        gap: $spacing-unit;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &__badge {
+        display: inline-block;
+        padding: ($spacing-unit * 0.375) ($spacing-unit * 1);
+        border-radius: 8px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        background: rgba(239,68,68,0.08);
+        color: #B91C1C;
+    }
+
+    &__badge--negative {
+        background-color: rgba(217, 70, 54, 0.08);
+        color: #B91C1C;
+    }
+
+    &__pl-amount--positive { color: #047857; font-weight: 700; }
+    &__pl-amount--negative { color: #B91C1C; font-weight: 700; }
+
+    &__more-btn { background: transparent; border: none; cursor: pointer; color: $color-text-secondary; }
+
+    /* Actions column (row-level) and header settings icon alignment */
+    &__td--actions { padding-right: ($spacing-unit * 2); text-align: right; }
+
+    &__settings-icon {
+        position: absolute;
+        right: ($spacing-unit * 2.5);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    /* PL column layout */
+    &__pl {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: ($spacing-unit * 0.25);
+    }
+
+    &__pl-pct { font-size: 0.875rem; color: $color-text-secondary; }
+}

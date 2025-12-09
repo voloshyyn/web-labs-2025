@@ -3,6 +3,7 @@
 
 .global-footer {
     padding: ($spacing-unit * 5.675) 0;
+    margin-top: ($spacing-unit * 5.625);;
     border-top: 1px solid $color-border;
 
     &__inner {

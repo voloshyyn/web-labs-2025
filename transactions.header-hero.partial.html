@@ -1,17 +1,11 @@
 <div class="transactions-hero" role="region" aria-label="Transactions header">
-  <div class="transactions-hero__inner">
+  <div class="container transactions-hero__container">
     <h1 class="transactions-hero__title" data-i18n="transactions.title">
       Transactions
     </h1>
 
     <div class="transactions-hero__controls" aria-label="Transaction filters">
       <form class="transactions-hero__form" action="#" method="get">
-        <label
-          for="transactions-search"
-          class="transactions-hero__visually-hidden"
-          data-i18n="transactions.search_label"
-          >Search
-        </label>
         <input
           id="transactions-search"
           name="q"
@@ -22,13 +16,6 @@
           aria-label="Search transactions"
           data-i18n="transactions.search_aria"
         />
-
-        <label
-          for="transactions-type"
-          class="transactions-hero__visually-hidden"
-          data-i18n="transactions.type_label"
-          >Transaction type</label
-        >
         <select
           id="transactions-type"
           name="type"
@@ -46,12 +33,6 @@
           <option value="swap" data-i18n="transactions.type.swap">Swap</option>
         </select>
 
-        <label
-          for="transactions-range"
-          class="transactions-hero__visually-hidden"
-          data-i18n="transactions.range_label"
-          >Date range</label
-        >
         <input
           id="transactions-range"
           name="range"

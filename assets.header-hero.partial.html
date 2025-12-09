@@ -1,59 +1,58 @@
 <div class="assets-hero" aria-label="Assets header">
-  <div class="assets-hero__main">
-    <h1 class="assets-hero__title" data-i18n="assets.title">Assets</h1>
+  <div class="container assets-hero__container">
+    <div class="assets-hero__main">
+      <h1 class="assets-hero__title" data-i18n="assets.title">Assets</h1>
 
-    <div class="assets-hero__stats">
-      <p class="assets-hero__label" data-i18n="assets.total_label">
-        Total Assets
-      </p>
-      <img
-        class="assets-hero__label-icon"
-        src="img/icon-description_more-about.png"
-        alt="Description dots"
-      />
-      <p class="assets-hero__amount">$6,525,977,658.81</p>
+      <div class="assets-hero__stats">
+        <p class="assets-hero__label" data-i18n="assets.total_label">
+          Total Assets
+          <img
+            class="assets-hero__label-icon"
+            src="img/icon-description_more-about.png"
+            alt="Description dots"
+          />
+        </p>
+        <p class="assets-hero__amount">$6,525,977,658.81</p>
+      </div>
     </div>
-  </div>
 
-  <div class="assets-hero__actions">
-    <form
-      class="assets-hero__search"
-      action="#"
-      method="get"
-      role="search"
-      aria-label="Search in your assets"
-    >
-      <label for="assets-search" class="assets-hero__visually-hidden"
-        >Search in your assets</label
-      >
-      <input
-        id="assets-search"
-        name="q"
-        class="assets-hero__search-input"
-        type="search"
-        placeholder="Search in Your Assets"
-        data-i18n-placeholder="assets.search_placeholder"
+    <div class="assets-hero__actions">
+      <form
+        class="assets-hero__search"
+        action="#"
+        method="get"
+        role="search"
         aria-label="Search in your assets"
-        data-i18n="assets.search_aria"
-      />
-      <img
-        class="assets-hero__search-icon"
-        src="img/search-glass-icon.svg"
-        alt="Search glass"
-      />
-    </form>
+      >
+        <input
+          id="assets-search"
+          name="q"
+          class="assets-hero__search-input"
+          type="search"
+          placeholder="Search in Your Assets"
+          data-i18n-placeholder="assets.search_placeholder"
+          aria-label="Search in your assets"
+          data-i18n="assets.search_aria"
+        />
+        <img
+          class="assets-hero__search-icon"
+          src="img/search-glass-icon.svg"
+          alt="Search glass"
+        />
+      </form>
 
-    <button
-      class="assets-hero__btn assets-hero__btn--download"
-      type="button"
-      aria-label="Download assets"
-      data-i18n="assets.download"
-    >
-      <img
-        class="assets-hero__btn-icon"
-        src="img/load-icon.png"
-        alt="Load icon"
-      />
-    </button>
+      <button
+        class="assets-hero__btn assets-hero__btn--download"
+        type="button"
+        aria-label="Download assets"
+        data-i18n="assets.download"
+      >
+        <img
+          class="assets-hero__btn-icon"
+          src="img/load-icon.png"
+          alt="Load icon"
+        />
+      </button>
+    </div>
   </div>
 </div>

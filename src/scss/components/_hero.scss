@@ -10,7 +10,6 @@
         font-size: 48px;
         font-weight: 700;
         color: $color-text-primary;
-        font-family: $font-secondary;
         margin-bottom: ($spacing-unit * 2);
         line-height: 1.2;
     }
@@ -37,19 +36,325 @@
         height: 50px;
         cursor: pointer;
         border: none;
-        transition: background-color 0.2s;
+        transition: background-color 0.2s, color 0.2s;
 
-        &--primary {
-            background-color: $color-btn-primary;
-            color: $color-white;
-            box-shadow: 0 0 10px -1px rgba(255, 107, 92, 0.3), 0 0 10px -1px rgba(255, 107, 92, 0.3);
+		&--primary {
+			background-color: $color-btn-primary;
+			color: $color-white;
+			box-shadow: 0 10px 30px rgba(16,24,40,0.06);
 
-            &:hover {
-                 padding: ($spacing-unit * 1) ($spacing-unit * 7.875);
-                background-color: $color-white;
-                border: 1px solid $color-btn-primary;
-                color: $color-btn-primary;
-            }
+			&:hover {
+				padding: ($spacing-unit * 1) ($spacing-unit * 7.875);
+				background-color: $color-white;
+				border: 1px solid $color-btn-primary;
+				color: $color-btn-primary;
+			}
+		}
+    }
+}
+
+.dashboard-hero {
+    padding-top: ($spacing-unit * 5.625);
+
+    &__container {
+        @extend .container;
+        /* keep default block layout; inner `.dashboard-hero__main` handles horizontal layout */
+    }
+
+    &__main { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        gap: ($spacing-unit * 3); 
+    }
+
+    &__title { 
+        font-size: 32px; 
+        font-weight: 700;
+        color: $color-text-primary; 
+        margin-bottom: 45px;
+    }
+
+    &__stats { 
+        display: flex; 
+        flex-direction: column; 
+        gap: ($spacing-unit * 0.5); 
+    }
+
+    &__label { 
+        display: flex;
+        align-items: center;
+        gap: ($spacing-unit * 1);
+        margin-bottom: 10px;
+
+        &-text { 
+            color: $color-text-secondary; 
+            font-size:16px; 
+            margin: 0; 
+        }
+
+    }
+
+    &__amount-text { 
+        font-size: 24px; 
+        font-weight: 700; 
+        color: $color-text-primary; 
+        margin-bottom: 5px;
+    }
+
+    &__delta {
+        display: flex; 
+        align-items: center; 
+        gap: ($spacing-unit * 1.25); 
+    }
+ 
+    &__delta-amount { 
+        color:$color-price-drop-down;
+        font-weight: 600; 
+        font-size: 16px;
+    }
+
+    &__badge { 
+        display: flex; 
+        align-items: center; 
+        gap: ($spacing-unit * 1);
+        padding: ($spacing-unit * 1) ($spacing-unit * 1); 
+        border-radius: 10px; 
+        background: rgba(217,70,54,0.08); 
+
+        &-negative { 
+            font-size: 14px; 
+            color: $color-price-drop-down; 
+        }
+
+        &-arrow { 
+            width: 15px; 
+            height: 10px;
+        }
+
+    }
+
+    &__btn { 
+        padding: ($spacing-unit * 1.4375) ($spacing-unit * 3); 
+        border-radius: 10px; 
+        font-size: 15px;
+        font-weight: 600;
+        background: $color-white; 
+        border: 1px solid $color-btn-secondary; 
+        color: $color-text-primary; 
+        cursor: pointer; 
+        transition: background-color 0.2s, color 0.2s;
+        margin-left: auto;
+
+        &:hover { 
+            background-color: $color-btn-secondary; 
+            color: $color-white; 
+        }
+    }
+
+    @media (max-width: $bp-tablet) {
+        flex-direction: column; 
+        align-items: stretch; 
+        text-align: left;
+        
+        &__main { 
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+
+        &__actions { 
+            margin-top: ($spacing-unit * 2); 
         }
     }
 }
+
+/* Assets page hero - align spacing with dashboard hero */
+.assets-hero {
+    padding-top: ($spacing-unit * 5.625);
+
+    &__container {
+        @extend .container;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: ($spacing-unit * 4);
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: ($spacing-unit * 1.5);
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 800;
+        color: $color-text-primary;
+        margin: 0 0 45px 0;
+    }
+
+    &__stats {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: ($spacing-unit * 1);
+    }
+
+    &__label {
+        color: $color-text-secondary;
+        font-size: 16px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: ($spacing-unit * 1);
+    }
+
+
+    &__amount {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-text-primary;
+        margin: 0;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: ($spacing-unit * 2);
+        margin-left: auto;
+        align-self: flex-end;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: ($spacing-unit * 1);
+        background: $color-bg-secondary;
+        border: 1px solid $color-input-line;
+        border-radius: 12px;
+        padding: 10px 16px;
+        min-width: 420px;
+        box-shadow: none;
+    }
+
+    &__search-input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+        color: $color-text-primary;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    &__search-icon { width: 18px; height: 18px; opacity: .7; }
+
+    &__btn { 
+        background: $color-white; 
+        border: 1px solid $color-border; 
+        border-radius: 8px; 
+        padding: 10px 12px;
+        display: inline-flex; align-items:center; justify-content:center;
+    }
+
+    @media (max-width: $bp-tablet) {
+        flex-direction: column;
+        align-items: stretch;
+
+        &__actions { margin-top: ($spacing-unit * 2); width: 100%; justify-content: flex-start; align-self: auto; }
+        &__search { min-width: auto; width: 100%; }
+    }
+}
+
+/* Transactions hero (page header with filters and download) */
+.transactions-hero {
+    padding-top: ($spacing-unit * 5.625);
+
+    &__container { @extend .container; display: flex; flex-direction: column; gap: ($spacing-unit * 2); }
+
+    &__title {
+        font-family: $font-secondary;
+        font-size: 32px;
+        font-weight: 800;
+        color: $color-text-primary;
+        margin: 0;
+        letter-spacing: -0.5px;
+    }
+
+    &__controls { display: flex; align-items: center; gap: ($spacing-unit * 3); margin-top: ($spacing-unit * 2); }
+
+    &__form { display: flex; align-items: center; gap: ($spacing-unit * 3); flex: 1; }
+
+    &__search, &__select, &__daterange {
+        height: 48px;
+        border-radius: 12px;
+        background: $color-bg-secondary;
+        border: 1px solid $color-input-line;
+        padding: 0 1rem;
+        color: $color-input-line-text;
+        min-width: 240px;
+    }
+
+    input.transactions-hero__search { width: 360px; }
+
+    select.transactions-hero__select {
+        appearance: none;
+        padding-right: 2.25rem;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 12px;
+    }
+
+    &__btn { margin-left: auto; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; border: 1px solid $color-border; background: $color-white; }
+
+    /* remove native search clear controls */
+    input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { display: none; }
+    input[type="search"]::-ms-clear { display: none; width: 0; height: 0; }
+
+    @media (max-width: $bp-tablet) {
+        &__form { flex-direction: column; align-items: stretch; }
+        &__search, &__select, &__daterange { width: 100%; }
+        &__btn { margin-left: 0; }
+    }
+}
+
+/* Watchlist hero: title left, action button right */
+.watchlist-hero {
+    padding-top: ($spacing-unit * 5.625);
+
+    &__container { @extend .container; display: flex; align-items: center; }
+
+    &__inner { display: flex; align-items: center; width: 100%; gap: ($spacing-unit * 2); }
+
+    &__title {
+        font-family: $font-secondary;
+        font-size: 32px;
+        font-weight: 800;
+        color: $color-text-primary;
+        margin: 0;
+    }
+
+    &__actions { margin-left: auto; }
+
+    &__add {
+        height: 44px;
+        padding: 10px 18px;
+        border-radius: 12px;
+        background: $color-btn-primary;
+        color: $color-white;
+        border: none;
+        font-weight: 700;
+        box-shadow: 0 10px 24px rgba(255,107,88,0.12), 0 2px 6px rgba(16,24,40,0.06);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: $bp-tablet) {
+        &__inner { flex-direction: column; align-items: stretch; }
+        &__actions { margin-left: 0; margin-top: ($spacing-unit * 2); }
+        &__title { font-size: 32px; }
+    }
+}
+
